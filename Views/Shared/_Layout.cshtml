@@ -3,48 +3,169 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Echo.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Echo.Web.styles.css" asp-append-version="true" />
+
+    <title>@ViewData["Title"] | ECHO</title>
+
+    <meta name="description"
+          content="ECHO is a Christ-centred creative arts ministry bringing the Word of God to life." />
+
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+    <link rel="stylesheet"
+          href="~/Echo.Web.styles.css"
+          asp-append-version="true" />
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Echo.Web</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+    <header class="echo-header">
+        <nav class="navbar navbar-expand-lg echo-navbar">
+            <div class="container echo-navbar-container">
+
+                <a class="navbar-brand echo-brand"
+                   asp-controller="Home"
+                   asp-action="Index">
+
+                    <img src="~/images/logo/logo.png"
+                         alt="ECHO logo"
+                         class="echo-navbar-logo" />
+                </a>
+
+                <button class="navbar-toggler echo-navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#echoNavigation"
+                        aria-controls="echoNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <div class="collapse navbar-collapse"
+                     id="echoNavigation">
+
+                    <ul class="navbar-nav mx-auto echo-nav-links">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Index">
+                                Home
+                            </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" href="#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#departments">
+                                Departments
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Productions"
+                               asp-action="WhenFireFell">
+                                Productions
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                Contact
+                            </a>
                         </li>
                     </ul>
-                    <partial name="_LoginPartial" />
+
+                    <div class="echo-navbar-actions">
+                        <partial name="_LoginPartial" />
+
+                        <a href="#join"
+                           class="btn echo-btn echo-btn-gold">
+                            Join ECHO
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="echo-footer" id="contact">
         <div class="container">
-            &copy; 2026 - Echo.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="echo-footer-grid">
+
+                <div class="echo-footer-brand">
+                    <img src="~/images/logo/logo.png"
+                         alt="ECHO logo"
+                         class="echo-footer-logo" />
+
+                    <p>
+                        Bringing the Word of God to life through
+                        drama, music, dance, storytelling and
+                        creative excellence.
+                    </p>
+                </div>
+
+                <div class="echo-footer-column">
+                    <h3>Explore</h3>
+
+                    <a asp-controller="Home"
+                       asp-action="Index">
+                        Home
+                    </a>
+
+                    <a href="#about">About ECHO</a>
+                    <a href="#departments">Departments</a>
+                    <a href="#production">Productions</a>
+                </div>
+
+                <div class="echo-footer-column">
+                    <h3>Get Involved</h3>
+
+                    <a href="#join">Join ECHO</a>
+                    <a href="#auditions">Auditions</a>
+                    <a href="#support">Support ECHO</a>
+                </div>
+
+                <div class="echo-footer-column">
+                    <h3>Our Declaration</h3>
+
+                    <p class="echo-footer-declaration">
+                        His Voice.<br />
+                        Transform a Generation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="echo-footer-bottom">
+                <p>
+                    &copy; @DateTime.Now.Year ECHO Creative Arts Ministry.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Established 2026
+                </p>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
