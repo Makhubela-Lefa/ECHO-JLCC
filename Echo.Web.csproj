@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Productions\" />
     <Folder Include="wwwroot\fonts\" />
     <Folder Include="wwwroot\videos\" />
   </ItemGroup>
