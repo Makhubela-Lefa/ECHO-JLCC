@@ -49,6 +49,11 @@ namespace Echo.Web.Controllers
             return View();
         }
 
+        public IActionResult Announcements()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

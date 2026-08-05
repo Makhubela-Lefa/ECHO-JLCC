@@ -1,0 +1,317 @@
+﻿@{
+    ViewData["Title"] = "Announcements";
+}
+
+<section class="announcements-hero">
+    <div class="announcements-hero-glow announcements-hero-glow-left"></div>
+    <div class="announcements-hero-glow announcements-hero-glow-right"></div>
+
+    <div class="container announcements-hero-container">
+        <div class="announcements-hero-content">
+
+            <span class="echo-eyebrow">
+                ECHO Updates
+            </span>
+
+            <h1>
+                Stay informed.
+                <span>Stay connected.</span>
+            </h1>
+
+            <p>
+                Find official updates regarding branch visits, auditions,
+                productions, rehearsals, fundraising initiatives and other
+                ECHO ministry activities.
+            </p>
+
+            <div class="announcements-hero-actions">
+                <a href="#latest-announcements"
+                   class="btn echo-btn echo-btn-gold">
+                    View Latest Updates
+                </a>
+
+                <a href="#announcement-categories"
+                   class="btn echo-btn echo-btn-outline">
+                    Browse Categories
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="announcements-introduction-section">
+    <div class="container">
+
+        <div class="announcements-introduction-grid">
+
+            <div>
+                <span class="echo-eyebrow">
+                    Official Communication
+                </span>
+
+                <h2>
+                    One trusted place for
+                    <span>ECHO information.</span>
+                </h2>
+            </div>
+
+            <div>
+                <p>
+                    This page will serve as the central public source for
+                    official ECHO notices and ministry updates.
+                </p>
+
+                <p>
+                    Announcements published here will later be managed through
+                    the private ECHO administration dashboard.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="announcement-categories-section"
+         id="announcement-categories">
+
+    <div class="container">
+
+        <div class="echo-section-heading">
+            <span class="echo-eyebrow">
+                Announcement Categories
+            </span>
+
+            <h2>
+                Clear updates.
+                <span>Easy to find.</span>
+            </h2>
+
+            <p>
+                Announcements will be organised according to the type of
+                information being communicated.
+            </p>
+        </div>
+
+        <div class="announcement-category-grid">
+
+            <article class="announcement-category-card">
+                <span>01</span>
+                <h3>General Updates</h3>
+                <p>
+                    Important ministry notices, public information and
+                    organisation-wide communication.
+                </p>
+            </article>
+
+            <article class="announcement-category-card">
+                <span>02</span>
+                <h3>Branch Visits</h3>
+                <p>
+                    Dates and information for ECHO introduction visits,
+                    presentations and branch engagement.
+                </p>
+            </article>
+
+            <article class="announcement-category-card">
+                <span>03</span>
+                <h3>Auditions</h3>
+                <p>
+                    Registration periods, audition dates, preparation
+                    instructions and casting-related communication.
+                </p>
+            </article>
+
+            <article class="announcement-category-card">
+                <span>04</span>
+                <h3>Productions</h3>
+                <p>
+                    Updates concerning <em>When Fire Fell</em>, future
+                    productions and production milestones.
+                </p>
+            </article>
+
+            <article class="announcement-category-card">
+                <span>05</span>
+                <h3>Rehearsals and Training</h3>
+                <p>
+                    Information about workshops, branch rehearsals,
+                    national rehearsals and development sessions.
+                </p>
+            </article>
+
+            <article class="announcement-category-card">
+                <span>06</span>
+                <h3>Fundraising and Support</h3>
+                <p>
+                    Fundraising activities, partnership opportunities and
+                    approved resource needs.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="latest-announcements-section"
+         id="latest-announcements">
+
+    <div class="container">
+
+        <div class="echo-section-heading">
+            <span class="echo-eyebrow">
+                Latest Announcements
+            </span>
+
+            <h2>
+                Official updates will
+                <span>appear here.</span>
+            </h2>
+
+            <p>
+                Once the announcement-management system is activated,
+                approved notices will be published to this page.
+            </p>
+        </div>
+
+        <div class="announcements-empty-state">
+
+            <div class="announcements-empty-icon"
+                 aria-hidden="true">
+                !
+            </div>
+
+            <span class="announcement-status">
+                No Public Announcements Yet
+            </span>
+
+            <h3>
+                ECHO is still preparing for its public introduction.
+            </h3>
+
+            <p>
+                Official notices about branch visits, auditions and ministry
+                activities will be published here once the relevant dates
+                and arrangements have been approved.
+            </p>
+
+            <div class="announcements-empty-actions">
+
+                <a asp-controller="Home"
+                   asp-action="Join"
+                   class="btn echo-btn echo-btn-gold">
+                    Join ECHO
+                </a>
+
+                <a asp-controller="Home"
+                   asp-action="Contact"
+                   class="btn echo-btn echo-btn-outline">
+                    Contact the Team
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="announcement-guidance-section">
+    <div class="container">
+
+        <div class="announcement-guidance-panel">
+
+            <div class="announcement-guidance-copy">
+
+                <span class="echo-eyebrow">
+                    Before You Act on an Announcement
+                </span>
+
+                <h2>
+                    Verify that the information
+                    <span>comes from ECHO.</span>
+                </h2>
+
+                <p>
+                    Official announcements should come from approved ECHO or
+                    JLCC communication channels.
+                </p>
+
+                <p>
+                    Do not send money, personal information or documents in
+                    response to unverified messages.
+                </p>
+
+            </div>
+
+            <div class="announcement-guidance-list">
+
+                <div>
+                    <span>01</span>
+                    <p>Check that the announcement appears on an official platform.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Confirm dates, venues and contact details before travelling.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Verify any request involving money or personal information.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Contact ECHO directly if any communication appears suspicious.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="announcement-updates-section">
+    <div class="container">
+
+        <div class="echo-join-panel">
+
+            <span class="echo-eyebrow">
+                Do Not Miss an Update
+            </span>
+
+            <h2>
+                Stay connected as
+                ECHO begins its journey.
+            </h2>
+
+            <p>
+                Follow the approved ECHO platforms and check this page for
+                official ministry announcements, audition information and
+                production updates.
+            </p>
+
+            <div class="echo-join-actions">
+
+                <a asp-controller="Home"
+                   asp-action="Contact"
+                   class="btn echo-btn echo-btn-gold">
+                    Contact ECHO
+                </a>
+
+                <a asp-controller="Productions"
+                   asp-action="Index"
+                   class="btn echo-btn echo-btn-outline">
+                    Explore Productions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
