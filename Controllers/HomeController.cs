@@ -21,6 +21,17 @@ namespace Echo.Web.Controllers
         public IActionResult About()
         {
             return View();
+
+        }
+
+        public IActionResult Departments()
+        {
+            return View();
+        }
+
+        public IActionResult Join()
+        {
+            return View();
         }
 
         public IActionResult Privacy()

@@ -67,7 +67,9 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#departments">
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Departments">
                                 Departments
                             </a>
                         </li>
@@ -90,9 +92,12 @@
                     <div class="echo-navbar-actions">
                         <partial name="_LoginPartial" />
 
-                        <a href="#join"
+                        <a asp-controller="Home"
+                           asp-action="Join"
                            class="btn echo-btn echo-btn-gold">
+
                             Join ECHO
+
                         </a>
                     </div>
                 </div>
@@ -133,7 +138,8 @@
                         About ECHO
                     </a>
 
-                    <a href="#departments">
+                    <a asp-controller="Home"
+                       asp-action="Departments">
                         Departments
                     </a>
 
@@ -146,7 +152,10 @@
                 <div class="echo-footer-column">
                     <h3>Get Involved</h3>
 
-                    <a href="#join">Join ECHO</a>
+                    <a asp-controller="Home"
+                       asp-action="Join">
+                        Join ECHO
+                    </a>
                     <a href="#auditions">Auditions</a>
                     <a href="#support">Support ECHO</a>
                 </div>

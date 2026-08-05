@@ -1,0 +1,380 @@
+﻿@{
+    ViewData["Title"] = "Join ECHO";
+}
+
+<section class="join-page-hero">
+    <div class="join-page-glow join-page-glow-left"></div>
+    <div class="join-page-glow join-page-glow-right"></div>
+
+    <div class="container join-page-hero-container">
+        <div class="join-page-hero-content">
+
+            <span class="echo-eyebrow">
+                Become Part of ECHO
+            </span>
+
+            <h1>
+                Your gift has
+                <span>a place here.</span>
+            </h1>
+
+            <p>
+                ECHO brings together people who are willing to serve,
+                learn, grow spiritually and use their God-given gifts
+                to bring the Word of God to life.
+            </p>
+
+            <div class="join-page-hero-actions">
+                <a href="#interest-form"
+                   class="btn echo-btn echo-btn-gold">
+                    Register Your Interest
+                </a>
+
+                <a asp-controller="Home"
+                   asp-action="Departments"
+                   class="btn echo-btn echo-btn-outline">
+                    Explore Departments
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="join-page-introduction">
+    <div class="container">
+        <div class="join-page-introduction-grid">
+
+            <div>
+                <span class="echo-eyebrow">
+                    Who Can Join?
+                </span>
+
+                <h2>
+                    Experience is welcome.
+                    <span>Willingness is essential.</span>
+                </h2>
+            </div>
+
+            <div>
+                <p>
+                    You do not need to be a professional actor, singer,
+                    designer, writer or technician to express interest
+                    in joining ECHO.
+                </p>
+
+                <p>
+                    We are looking for people who are teachable, reliable,
+                    spiritually committed and willing to work alongside
+                    others with humility and excellence.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="join-expectations-section">
+    <div class="container">
+
+        <div class="echo-section-heading">
+            <span class="echo-eyebrow">
+                What Membership Requires
+            </span>
+
+            <h2>
+                More than talent.
+                <span>We value commitment.</span>
+            </h2>
+
+            <p>
+                Every person who joins ECHO becomes part of a ministry,
+                not simply a production team.
+            </p>
+        </div>
+
+        <div class="join-expectations-grid">
+
+            <article class="join-expectation-card">
+                <span>01</span>
+                <h3>Spiritual Growth</h3>
+                <p>
+                    Members should be willing to participate in prayer,
+                    Scripture study, devotions and spiritual preparation.
+                </p>
+            </article>
+
+            <article class="join-expectation-card">
+                <span>02</span>
+                <h3>Reliability</h3>
+                <p>
+                    Rehearsals, meetings, deadlines and assigned
+                    responsibilities must be treated seriously.
+                </p>
+            </article>
+
+            <article class="join-expectation-card">
+                <span>03</span>
+                <h3>Teachability</h3>
+                <p>
+                    Members should remain open to guidance, correction,
+                    training and continued development.
+                </p>
+            </article>
+
+            <article class="join-expectation-card">
+                <span>04</span>
+                <h3>Teamwork</h3>
+                <p>
+                    Every department depends on the others, making unity,
+                    respect and communication essential.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="join-opportunities-section">
+    <div class="container">
+
+        <div class="join-opportunities-panel">
+
+            <div class="join-opportunities-copy">
+                <span class="echo-eyebrow">
+                    There Is More Than One Way to Serve
+                </span>
+
+                <h2>
+                    On stage.
+                    <span>Behind the scenes. Beyond the venue.</span>
+                </h2>
+
+                <p>
+                    ECHO needs actors, dancers and singers, but it also needs
+                    intercessors, writers, administrators, designers,
+                    technicians, photographers, evangelists, fundraisers,
+                    coordinators and volunteers.
+                </p>
+
+                <a asp-controller="Home"
+                   asp-action="Departments"
+                   class="department-link">
+                    View All Eight Departments →
+                </a>
+            </div>
+
+            <div class="join-opportunities-list">
+                <span>Acting and performance</span>
+                <span>Music and worship</span>
+                <span>Dance and movement</span>
+                <span>Prayer and discipleship</span>
+                <span>Writing and creative direction</span>
+                <span>Media and digital ministry</span>
+                <span>Technical arts and design</span>
+                <span>Administration and operations</span>
+                <span>Outreach and evangelism</span>
+                <span>Partnerships and fundraising</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="join-form-section" id="interest-form">
+    <div class="container">
+
+        <div class="join-form-layout">
+
+            <div class="join-form-information">
+                <span class="echo-eyebrow">
+                    Register Your Interest
+                </span>
+
+                <h2>
+                    Tell us where you would
+                    <span>like to serve.</span>
+                </h2>
+
+                <p>
+                    Complete the form to express interest in joining ECHO.
+                    Submission does not automatically confirm placement.
+                    The ECHO team will contact you with the next steps.
+                </p>
+
+                <div class="join-form-note">
+                    <span>What happens next?</span>
+
+                    <ol>
+                        <li>Your information is reviewed.</li>
+                        <li>An ECHO representative contacts you.</li>
+                        <li>You receive details about orientation or auditions.</li>
+                        <li>Your department placement is confirmed.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="join-form-card">
+
+                <form>
+                    <div class="join-form-grid">
+
+                        <div class="join-form-group">
+                            <label for="firstName">First name</label>
+                            <input id="firstName"
+                                   name="firstName"
+                                   type="text"
+                                   placeholder="Enter your first name" />
+                        </div>
+
+                        <div class="join-form-group">
+                            <label for="lastName">Surname</label>
+                            <input id="lastName"
+                                   name="lastName"
+                                   type="text"
+                                   placeholder="Enter your surname" />
+                        </div>
+
+                        <div class="join-form-group">
+                            <label for="phoneNumber">WhatsApp number</label>
+                            <input id="phoneNumber"
+                                   name="phoneNumber"
+                                   type="tel"
+                                   placeholder="e.g. 071 234 5678" />
+                        </div>
+
+                        <div class="join-form-group">
+                            <label for="email">Email address</label>
+                            <input id="email"
+                                   name="email"
+                                   type="email"
+                                   placeholder="Enter your email address" />
+                        </div>
+
+                        <div class="join-form-group">
+                            <label for="branch">JLCC branch</label>
+                            <input id="branch"
+                                   name="branch"
+                                   type="text"
+                                   placeholder="Enter your home branch" />
+                        </div>
+
+                        <div class="join-form-group">
+                            <label for="age">Age</label>
+                            <input id="age"
+                                   name="age"
+                                   type="number"
+                                   min="13"
+                                   placeholder="Enter your age" />
+                        </div>
+
+                        <div class="join-form-group join-form-group-full">
+                            <label for="department">Preferred department</label>
+
+                            <select id="department" name="department">
+                                <option value="">
+                                    Select a department
+                                </option>
+
+                                <option>
+                                    Spiritual Life and Discipleship
+                                </option>
+
+                                <option>
+                                    Creative Productions
+                                </option>
+
+                                <option>
+                                    Performing Arts
+                                </option>
+
+                                <option>
+                                    Media, Communications and Digital Ministry
+                                </option>
+
+                                <option>
+                                    Technical Arts and Design
+                                </option>
+
+                                <option>
+                                    Outreach and Evangelism
+                                </option>
+
+                                <option>
+                                    Administration and Operations
+                                </option>
+
+                                <option>
+                                    Partnerships and Resource Development
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="join-form-group join-form-group-full">
+                            <label for="areaOfInterest">
+                                Specific area of interest
+                            </label>
+
+                            <input id="areaOfInterest"
+                                   name="areaOfInterest"
+                                   type="text"
+                                   placeholder="e.g. acting, intercession, photography or costumes" />
+                        </div>
+
+                        <div class="join-form-group join-form-group-full">
+                            <label for="experience">
+                                Tell us about your interest or experience
+                            </label>
+
+                            <textarea id="experience"
+                                      name="experience"
+                                      rows="5"
+                                      placeholder="You do not need previous experience. Tell us what interests you and why you would like to join."></textarea>
+                        </div>
+
+                        <div class="join-form-group join-form-group-full">
+                            <label for="availability">
+                                General availability
+                            </label>
+
+                            <textarea id="availability"
+                                      name="availability"
+                                      rows="3"
+                                      placeholder="Tell us when you are generally available for meetings, rehearsals or ministry activities."></textarea>
+                        </div>
+
+                        <div class="join-consent join-form-group-full">
+                            <input id="consent"
+                                   name="consent"
+                                   type="checkbox" />
+
+                            <label for="consent">
+                                I consent to ECHO using the information supplied
+                                to contact me regarding membership, orientation
+                                and relevant ministry opportunities.
+                            </label>
+                        </div>
+
+                        <div class="join-form-group-full">
+                            <button type="button"
+                                    class="btn echo-btn echo-btn-gold join-submit-button">
+                                Submit Interest
+                            </button>
+
+                            <p class="join-form-status">
+                                Online submissions will become available once
+                                the ECHO application system is activated.
+                            </p>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
