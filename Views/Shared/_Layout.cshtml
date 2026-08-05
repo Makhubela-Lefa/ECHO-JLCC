@@ -77,13 +77,23 @@
                         <li class="nav-item">
                             <a class="nav-link"
                                asp-controller="Productions"
-                               asp-action="WhenFireFell">
+                               asp-action="Index">
                                 Productions
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Auditions">
+                                Auditions
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Contact">
                                 Contact
                             </a>
                         </li>
@@ -144,20 +154,37 @@
                     </a>
 
                     <a asp-controller="Productions"
-                       asp-action="WhenFireFell">
+                       asp-action="Index">
                         Productions
+                    </a>
+
+                    <a asp-controller="Home"
+                       asp-action="Contact">
+                        Contact
                     </a>
                 </div>
 
                 <div class="echo-footer-column">
                     <h3>Get Involved</h3>
 
-                    <a asp-controller="Home"
-                       asp-action="Join">
-                        Join ECHO
-                    </a>
-                    <a href="#auditions">Auditions</a>
-                    <a href="#support">Support ECHO</a>
+                    <div class="echo-footer-column">
+                        <h3>Get Involved</h3>
+
+                        <a asp-controller="Home"
+                           asp-action="Join">
+                            Join ECHO
+                        </a>
+
+                        <a asp-controller="Home"
+                           asp-action="Auditions">
+                            Auditions
+                        </a>
+
+                        <a asp-controller="Home"
+                           asp-action="Support">
+                            Support ECHO
+                        </a>
+                    </div>
                 </div>
 
                 <div class="echo-footer-column">

@@ -1,0 +1,590 @@
+﻿@{
+    ViewData["Title"] = "Auditions";
+}
+
+<section class="auditions-hero">
+    <div class="auditions-hero-glow auditions-hero-glow-left"></div>
+    <div class="auditions-hero-glow auditions-hero-glow-right"></div>
+
+    <div class="container auditions-hero-container">
+        <div class="auditions-hero-content">
+
+            <span class="echo-eyebrow">
+                When Fire Fell
+            </span>
+
+            <h1>
+                Step into the story.
+                <span>Audition for ECHO.</span>
+            </h1>
+
+            <p>
+                Auditions will help us identify actors, singers, dancers,
+                narrators and other performers who can bring the story of
+                Elijah to life with excellence, commitment and spiritual depth.
+            </p>
+
+            <div class="auditions-hero-actions">
+                <a href="#audition-categories"
+                   class="btn echo-btn echo-btn-gold">
+                    View Audition Categories
+                </a>
+
+                <a href="#audition-form"
+                   class="btn echo-btn echo-btn-outline">
+                    Register for Auditions
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="auditions-clarity-section">
+    <div class="container">
+
+        <div class="auditions-clarity-grid">
+
+            <article class="auditions-clarity-card auditions-clarity-card-gold">
+                <span class="echo-eyebrow">
+                    Who Must Audition?
+                </span>
+
+                <h2>
+                    Performing roles require
+                    <span>an audition.</span>
+                </h2>
+
+                <p>
+                    Anyone interested in acting, singing, dancing, narration,
+                    spoken word or another performance-based role will take part
+                    in an audition process.
+                </p>
+
+                <ul>
+                    <li>Actors and character performers</li>
+                    <li>Singers and choir members</li>
+                    <li>Dancers and movement performers</li>
+                    <li>Narrators and spoken-word performers</li>
+                    <li>Musicians where required</li>
+                </ul>
+            </article>
+
+            <article class="auditions-clarity-card">
+                <span class="echo-eyebrow">
+                    Who Does Not Need to Audition?
+                </span>
+
+                <h2>
+                    Serving behind the scenes
+                    <span>does not require performance.</span>
+                </h2>
+
+                <p>
+                    People interested in non-performing departments may register
+                    through the general Join ECHO process instead.
+                </p>
+
+                <ul>
+                    <li>Administration and operations</li>
+                    <li>Media and communications</li>
+                    <li>Technical arts and design</li>
+                    <li>Spiritual life and discipleship</li>
+                    <li>Outreach, fundraising and partnerships</li>
+                </ul>
+
+                <a asp-controller="Home"
+                   asp-action="Join"
+                   class="department-link">
+                    Join a Non-Performing Department →
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="audition-categories-section" id="audition-categories">
+    <div class="container">
+
+        <div class="echo-section-heading">
+            <span class="echo-eyebrow">
+                Audition Categories
+            </span>
+
+            <h2>
+                Different expressions.
+                <span>One production.</span>
+            </h2>
+
+            <p>
+                Applicants may express interest in one or more categories.
+                Final placement will depend on ability, suitability,
+                availability and the needs of the production.
+            </p>
+        </div>
+
+        <div class="audition-category-grid">
+
+            <article class="audition-category-card">
+                <span class="audition-category-number">01</span>
+
+                <h3>Acting</h3>
+
+                <p>
+                    Audition for major characters, supporting characters,
+                    ensemble roles or crowd scenes within
+                    <em>When Fire Fell</em>.
+                </p>
+
+                <div class="audition-category-details">
+                    <span>Character interpretation</span>
+                    <span>Line delivery</span>
+                    <span>Emotion and expression</span>
+                    <span>Stage presence</span>
+                </div>
+            </article>
+
+            <article class="audition-category-card">
+                <span class="audition-category-number">02</span>
+
+                <h3>Voice and Narration</h3>
+
+                <p>
+                    Audition for narration, spoken word, Scripture reading
+                    or other voice-led storytelling roles.
+                </p>
+
+                <div class="audition-category-details">
+                    <span>Clarity</span>
+                    <span>Projection</span>
+                    <span>Emotional delivery</span>
+                    <span>Storytelling ability</span>
+                </div>
+            </article>
+
+            <article class="audition-category-card">
+                <span class="audition-category-number">03</span>
+
+                <h3>Music and Singing</h3>
+
+                <p>
+                    Audition for choir, worship moments, solo parts,
+                    harmonies or other vocal responsibilities.
+                </p>
+
+                <div class="audition-category-details">
+                    <span>Pitch and tone</span>
+                    <span>Harmony</span>
+                    <span>Worship expression</span>
+                    <span>Vocal discipline</span>
+                </div>
+            </article>
+
+            <article class="audition-category-card">
+                <span class="audition-category-number">04</span>
+
+                <h3>Dance and Movement</h3>
+
+                <p>
+                    Audition for spiritual dance, contemporary movement,
+                    celebration dance, gumboot or other choreography.
+                </p>
+
+                <div class="audition-category-details">
+                    <span>Musicality</span>
+                    <span>Expression</span>
+                    <span>Coordination</span>
+                    <span>Ability to learn choreography</span>
+                </div>
+            </article>
+
+            <article class="audition-category-card">
+                <span class="audition-category-number">05</span>
+
+                <h3>Musicians</h3>
+
+                <p>
+                    Musicians may be considered where live instrumental support
+                    is required for worship, atmosphere or production moments.
+                </p>
+
+                <div class="audition-category-details">
+                    <span>Instrumental skill</span>
+                    <span>Timing</span>
+                    <span>Teamwork</span>
+                    <span>Worship sensitivity</span>
+                </div>
+            </article>
+
+            <article class="audition-category-card">
+                <span class="audition-category-number">06</span>
+
+                <h3>Ensemble</h3>
+
+                <p>
+                    Ensemble performers may participate in crowd scenes,
+                    group movement, supporting moments and transitions.
+                </p>
+
+                <div class="audition-category-details">
+                    <span>Commitment</span>
+                    <span>Stage awareness</span>
+                    <span>Group discipline</span>
+                    <span>Versatility</span>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="audition-process-section">
+    <div class="container">
+
+        <div class="echo-section-heading">
+            <span class="echo-eyebrow">
+                The Audition Process
+            </span>
+
+            <h2>
+                Clear steps.
+                <span>Fair consideration.</span>
+            </h2>
+
+            <p>
+                Every applicant will receive clear communication regarding
+                their audition, next steps and final outcome.
+            </p>
+        </div>
+
+        <div class="audition-process-timeline">
+
+            <article class="audition-process-step">
+                <span>01</span>
+
+                <div>
+                    <h3>Register Interest</h3>
+
+                    <p>
+                        Complete the online form and indicate your preferred
+                        audition category, branch and availability.
+                    </p>
+                </div>
+            </article>
+
+            <article class="audition-process-step">
+                <span>02</span>
+
+                <div>
+                    <h3>Receive Communication</h3>
+
+                    <p>
+                        The ECHO team reviews your information and contacts you
+                        through WhatsApp or email.
+                    </p>
+                </div>
+            </article>
+
+            <article class="audition-process-step">
+                <span>03</span>
+
+                <div>
+                    <h3>Prepare Your Material</h3>
+
+                    <p>
+                        You receive the required audition extract, song,
+                        movement brief or preparation instructions.
+                    </p>
+                </div>
+            </article>
+
+            <article class="audition-process-step">
+                <span>04</span>
+
+                <div>
+                    <h3>Attend In Person</h3>
+
+                    <p>
+                        Auditions take place physically on the communicated
+                        date, time and venue.
+                    </p>
+                </div>
+            </article>
+
+            <article class="audition-process-step">
+                <span>05</span>
+
+                <div>
+                    <h3>Selection and Placement</h3>
+
+                    <p>
+                        Applicants are assessed and placed according to the
+                        needs of the production and their strongest area.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="audition-preparation-section">
+    <div class="container">
+
+        <div class="audition-preparation-panel">
+
+            <div class="audition-preparation-copy">
+                <span class="echo-eyebrow">
+                    How to Prepare
+                </span>
+
+                <h2>
+                    Come prepared.
+                    <span>Come teachable.</span>
+                </h2>
+
+                <p>
+                    Applicants do not need professional experience, but they
+                    should arrive ready to participate, receive instruction
+                    and demonstrate commitment.
+                </p>
+            </div>
+
+            <div class="audition-preparation-list">
+                <div>
+                    <span>01</span>
+                    <p>Read and understand all audition instructions.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Practise any supplied lines, songs or choreography.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Arrive on time and dressed appropriately for movement.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Be open to redirection, feedback and alternative roles.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Be honest about your availability and transport needs.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="audition-form-section" id="audition-form">
+    <div class="container">
+
+        <div class="audition-form-layout">
+
+            <div class="audition-form-information">
+                <span class="echo-eyebrow">
+                    Audition Registration
+                </span>
+
+                <h2>
+                    Express your interest in
+                    <span>When Fire Fell.</span>
+                </h2>
+
+                <p>
+                    Complete the form below. The ECHO team will review your
+                    information and contact you once audition dates and
+                    arrangements are confirmed.
+                </p>
+
+                <div class="audition-form-notice">
+                    <span>Please Note</span>
+
+                    <p>
+                        Registration does not guarantee a particular role.
+                        Applicants may be considered for another category or
+                        ensemble placement where appropriate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="audition-form-card">
+
+                <form>
+                    <div class="audition-form-grid">
+
+                        <div class="audition-form-group">
+                            <label for="auditionFirstName">
+                                First name
+                            </label>
+
+                            <input id="auditionFirstName"
+                                   name="auditionFirstName"
+                                   type="text"
+                                   placeholder="Enter your first name" />
+                        </div>
+
+                        <div class="audition-form-group">
+                            <label for="auditionLastName">
+                                Surname
+                            </label>
+
+                            <input id="auditionLastName"
+                                   name="auditionLastName"
+                                   type="text"
+                                   placeholder="Enter your surname" />
+                        </div>
+
+                        <div class="audition-form-group">
+                            <label for="auditionPhone">
+                                WhatsApp number
+                            </label>
+
+                            <input id="auditionPhone"
+                                   name="auditionPhone"
+                                   type="tel"
+                                   placeholder="e.g. 071 234 5678" />
+                        </div>
+
+                        <div class="audition-form-group">
+                            <label for="auditionEmail">
+                                Email address
+                            </label>
+
+                            <input id="auditionEmail"
+                                   name="auditionEmail"
+                                   type="email"
+                                   placeholder="Enter your email address" />
+                        </div>
+
+                        <div class="audition-form-group">
+                            <label for="auditionAge">
+                                Age
+                            </label>
+
+                            <input id="auditionAge"
+                                   name="auditionAge"
+                                   type="number"
+                                   min="13"
+                                   placeholder="Enter your age" />
+                        </div>
+
+                        <div class="audition-form-group">
+                            <label for="auditionBranch">
+                                JLCC branch
+                            </label>
+
+                            <input id="auditionBranch"
+                                   name="auditionBranch"
+                                   type="text"
+                                   placeholder="Enter your home branch" />
+                        </div>
+
+                        <div class="audition-form-group audition-form-group-full">
+                            <label for="auditionCategory">
+                                Primary audition category
+                            </label>
+
+                            <select id="auditionCategory"
+                                    name="auditionCategory">
+
+                                <option value="">
+                                    Select a category
+                                </option>
+
+                                <option>Acting</option>
+                                <option>Voice and Narration</option>
+                                <option>Music and Singing</option>
+                                <option>Dance and Movement</option>
+                                <option>Musician</option>
+                                <option>Ensemble</option>
+                            </select>
+                        </div>
+
+                        <div class="audition-form-group audition-form-group-full">
+                            <label for="secondaryInterest">
+                                Secondary area of interest
+                            </label>
+
+                            <input id="secondaryInterest"
+                                   name="secondaryInterest"
+                                   type="text"
+                                   placeholder="Optional: another role or category you would consider" />
+                        </div>
+
+                        <div class="audition-form-group audition-form-group-full">
+                            <label for="auditionExperience">
+                                Previous experience
+                            </label>
+
+                            <textarea id="auditionExperience"
+                                      name="auditionExperience"
+                                      rows="4"
+                                      placeholder="Previous experience is not required. Briefly tell us about any relevant experience or training."></textarea>
+                        </div>
+
+                        <div class="audition-form-group audition-form-group-full">
+                            <label for="auditionMotivation">
+                                Why would you like to audition?
+                            </label>
+
+                            <textarea id="auditionMotivation"
+                                      name="auditionMotivation"
+                                      rows="5"
+                                      placeholder="Tell us why you would like to be part of When Fire Fell."></textarea>
+                        </div>
+
+                        <div class="audition-form-group audition-form-group-full">
+                            <label for="auditionAvailability">
+                                Availability
+                            </label>
+
+                            <textarea id="auditionAvailability"
+                                      name="auditionAvailability"
+                                      rows="3"
+                                      placeholder="Share your general availability for auditions, branch rehearsals and national rehearsals."></textarea>
+                        </div>
+
+                        <div class="audition-consent audition-form-group-full">
+                            <input id="auditionConsent"
+                                   name="auditionConsent"
+                                   type="checkbox" />
+
+                            <label for="auditionConsent">
+                                I consent to ECHO using the information supplied
+                                to contact me about auditions, casting and
+                                production-related opportunities.
+                            </label>
+                        </div>
+
+                        <div class="audition-form-group-full">
+                            <button type="button"
+                                    class="btn echo-btn echo-btn-gold audition-submit-button">
+                                Submit Audition Interest
+                            </button>
+
+                            <p class="audition-form-status">
+                                Online submissions will become available once
+                                the audition-management system is activated.
+                            </p>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

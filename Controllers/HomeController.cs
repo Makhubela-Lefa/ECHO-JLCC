@@ -34,6 +34,21 @@ namespace Echo.Web.Controllers
             return View();
         }
 
+        public IActionResult Auditions()
+        {
+            return View();
+        }
+
+        public IActionResult Support()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

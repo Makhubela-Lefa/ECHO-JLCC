@@ -42,7 +42,8 @@
                     Discover the Story
                 </a>
 
-                <a href="#auditions"
+                <a asp-controller="Home"
+                   asp-action="Auditions"
                    class="btn echo-btn echo-btn-outline">
                     Audition Information
                 </a>
@@ -356,12 +357,15 @@
             </p>
 
             <div class="echo-join-actions">
-                <a href="#"
+                <a asp-controller="Home"
+                   asp-action="Auditions"
+                   asp-fragment="audition-form"
                    class="btn echo-btn echo-btn-gold">
                     Register Your Interest
                 </a>
 
-                <a href="#"
+                <a asp-controller="Home"
+                   asp-action="Auditions"
                    class="btn echo-btn echo-btn-outline">
                     View Audition Information
                 </a>
