@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Page Not Found";
+}
+
+<section class="not-found-page">
+    <div class="not-found-glow not-found-glow-left"></div>
+    <div class="not-found-glow not-found-glow-right"></div>
+
+    <div class="container not-found-container">
+        <div class="not-found-content">
+
+            <span class="not-found-code" aria-hidden="true">
+                404
+            </span>
+
+            <span class="echo-eyebrow">
+                Page Not Found
+            </span>
+
+            <h1>
+                This part of the story
+                <span>could not be found.</span>
+            </h1>
+
+            <p>
+                The page may have been moved, renamed or may no longer
+                be available. Let us help you find your way back.
+            </p>
+
+            <div class="not-found-actions">
+                <a asp-controller="Home"
+                   asp-action="Index"
+                   class="btn echo-btn echo-btn-gold">
+                    Return Home
+                </a>
+
+                <a asp-controller="Home"
+                   asp-action="Contact"
+                   class="btn echo-btn echo-btn-outline">
+                    Contact ECHO
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>

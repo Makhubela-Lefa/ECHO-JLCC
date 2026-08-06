@@ -22,6 +22,26 @@
 </head>
 
 <body>
+
+    <div class="echo-loader"
+         id="echoLoader"
+         role="status"
+         aria-live="polite"
+         aria-label="Loading ECHO">
+
+        <div class="echo-loader-content">
+            <img src="~/images/logo/logo.png"
+                 alt=""
+                 class="echo-loader-logo" />
+
+            <div class="echo-loader-ring"
+                 aria-hidden="true">
+            </div>
+
+            <span>Loading ECHO</span>
+        </div>
+    </div>
+
     <header class="echo-header">
         <nav class="navbar navbar-expand-lg echo-navbar">
             <div class="container echo-navbar-container">
@@ -227,6 +247,14 @@
             </div>
         </div>
     </footer>
+
+    <button type="button"
+            class="echo-scroll-top"
+            id="echoScrollTop"
+            aria-label="Scroll back to the top of the page">
+
+        <span aria-hidden="true">↑</span>
+    </button>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
