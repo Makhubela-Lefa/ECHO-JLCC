@@ -1,0 +1,157 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="echo-admin-dashboard">
+
+    <section class="echo-admin-welcome">
+        <div>
+            <span class="echo-admin-section-label">
+                Overview
+            </span>
+
+            <h2>
+                Welcome back to ECHO.
+            </h2>
+
+            <p>
+                Manage ministry content, applications, communication
+                and future productions from one private workspace.
+            </p>
+        </div>
+    </section>
+
+    <section class="echo-admin-card-grid">
+
+        <a asp-area="Admin"
+           asp-controller="Announcements"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">01</span>
+
+            <div>
+                <h3>Announcements</h3>
+
+                <p>
+                    Create, edit and manage public ministry updates.
+                </p>
+            </div>
+        </a>
+
+        <a asp-area="Admin"
+           asp-controller="JoinApplications"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">02</span>
+
+            <div>
+                <h3>Join Applications</h3>
+
+                <p>
+                    Review people who want to become part of ECHO.
+                </p>
+            </div>
+        </a>
+
+        <a asp-area="Admin"
+           asp-controller="Auditions"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">03</span>
+
+            <div>
+                <h3>Auditions</h3>
+
+                <p>
+                    Review and manage audition registrations.
+                </p>
+            </div>
+        </a>
+
+        <a asp-area="Admin"
+           asp-controller="ContactEnquiries"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">04</span>
+
+            <div>
+                <h3>Contact Enquiries</h3>
+
+                <p>
+                    View messages and enquiries sent to ECHO.
+                </p>
+            </div>
+        </a>
+
+        <a asp-area="Admin"
+           asp-controller="SupportEnquiries"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">05</span>
+
+            <div>
+                <h3>Support</h3>
+
+                <p>
+                    Manage partnership and support-related enquiries.
+                </p>
+            </div>
+        </a>
+
+        <a asp-area="Admin"
+           asp-controller="Productions"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">06</span>
+
+            <div>
+                <h3>Productions</h3>
+
+                <p>
+                    Manage current and future production content.
+                </p>
+            </div>
+        </a>
+
+        <a asp-area="Admin"
+           asp-controller="Team"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">07</span>
+
+            <div>
+                <h3>Team</h3>
+
+                <p>
+                    Manage ministry leadership and team information.
+                </p>
+            </div>
+        </a>
+
+        <a asp-area="Admin"
+           asp-controller="Settings"
+           asp-action="Index"
+           class="echo-admin-card">
+
+            <span class="echo-admin-card-number">08</span>
+
+            <div>
+                <h3>Settings</h3>
+
+                <p>
+                    Manage future website and ministry configuration.
+                </p>
+            </div>
+        </a>
+
+    </section>
+
+</div>

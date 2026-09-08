@@ -1,0 +1,218 @@
+﻿.echo-admin-body {
+    margin: 0;
+    min-height: 100vh;
+    background: #070707;
+    color: #ffffff;
+}
+
+.echo-admin-shell {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+.echo-admin-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.4rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0b0b0b;
+}
+
+.echo-admin-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+    .echo-admin-brand img {
+        width: 130px;
+        border-radius: 10px;
+    }
+
+    .echo-admin-brand span {
+        color: var(--echo-gold-light);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+    }
+
+.echo-admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+    .echo-admin-nav a {
+        padding: 0.85rem 1rem;
+        border-radius: 12px;
+        color: #b9b9b9;
+        transition: background-color var(--echo-transition), color var(--echo-transition);
+    }
+
+        .echo-admin-nav a:hover {
+            color: #ffffff;
+            background: rgba(202, 164, 81, 0.1);
+        }
+
+.echo-admin-sidebar-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+    .echo-admin-sidebar-footer a,
+    .echo-admin-sidebar-footer button {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 12px;
+        color: #d7d7d7;
+        background: transparent;
+        text-align: left;
+    }
+
+.echo-admin-main {
+    min-width: 0;
+}
+
+.echo-admin-topbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(10, 10, 10, 0.96);
+}
+
+.echo-admin-eyebrow {
+    color: var(--echo-gold);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.echo-admin-topbar h1 {
+    margin: 0.25rem 0 0;
+    font-size: 1.75rem;
+}
+
+.echo-admin-user {
+    align-self: center;
+    color: #a8a8a8;
+    font-size: 0.9rem;
+}
+
+.echo-admin-content {
+    padding: 3rem;
+}
+
+@media (max-width: 991.98px) {
+    .echo-admin-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .echo-admin-sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .echo-admin-topbar {
+        padding: 1.5rem;
+    }
+
+    .echo-admin-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Admin dashboard */
+
+.echo-admin-welcome {
+    margin-bottom: 2.5rem;
+    padding: 2.2rem;
+    border: 1px solid var(--echo-border);
+    border-radius: var(--echo-radius-medium);
+    background: linear-gradient( 145deg, rgba(202, 164, 81, 0.09), rgba(255, 255, 255, 0.025) );
+}
+
+.echo-admin-section-label {
+    display: inline-block;
+    margin-bottom: 0.65rem;
+    color: var(--echo-gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.echo-admin-welcome h2 {
+    margin-bottom: 0.8rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.echo-admin-welcome p {
+    max-width: 700px;
+    margin: 0;
+    color: #a9a9a9;
+}
+
+.echo-admin-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+}
+
+.echo-admin-card {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    min-height: 180px;
+    padding: 1.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--echo-radius-medium);
+    background: rgba(255, 255, 255, 0.025);
+    transition: transform var(--echo-transition), border-color var(--echo-transition), background-color var(--echo-transition), box-shadow var(--echo-transition);
+}
+
+    .echo-admin-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(202, 164, 81, 0.42);
+        background: rgba(202, 164, 81, 0.055);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    }
+
+.echo-admin-card-number {
+    color: var(--echo-gold);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.echo-admin-card h3 {
+    margin-bottom: 0.65rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.echo-admin-card p {
+    margin: 0;
+    color: #929292;
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 767.98px) {
+    .echo-admin-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
