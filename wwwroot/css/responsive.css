@@ -1,0 +1,596 @@
+﻿/* Responsive layout */
+
+@media (max-width: 991.98px) {
+    .echo-navbar-collapse,
+    .navbar-collapse {
+        margin-top: 1rem;
+        padding: 1.25rem;
+        border: 1px solid var(--echo-border);
+        border-radius: var(--echo-radius-medium);
+        background: rgba(10, 10, 10, 0.97);
+    }
+
+    .privacy-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .privacy-navigation {
+        position: static;
+    }
+
+    .announcements-introduction-grid,
+    .announcement-guidance-panel {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .announcement-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-introduction-grid,
+    .contact-enquiry-panel,
+    .contact-form-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .contact-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form-information {
+        position: static;
+    }
+
+    .productions-purpose-grid,
+    .current-production-card {
+        grid-template-columns: 1fr;
+    }
+
+    .current-production-image-wrapper {
+        min-height: 480px;
+    }
+
+    .production-principles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .support-introduction-grid,
+    .support-production-panel,
+    .support-form-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .support-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .support-accountability-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .support-form-information {
+        position: static;
+    }
+
+    .auditions-clarity-grid,
+    .audition-preparation-panel,
+    .audition-form-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .audition-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .audition-form-information {
+        position: static;
+    }
+
+    .join-page-introduction-grid,
+    .join-opportunities-panel,
+    .join-form-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .join-expectations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .join-form-information {
+        position: static;
+    }
+
+    .departments-introduction-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .departments-grid {
+        grid-template-columns: 1fr;
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .department-card {
+        min-height: auto;
+    }
+
+    .department-purpose {
+        min-height: auto;
+    }
+
+    .about-split-layout,
+    .about-mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-scripture-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-scripture-card,
+    .about-scripture-card:nth-child(4),
+    .about-scripture-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .about-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-founders-grid {
+        grid-template-columns: 1fr;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .about-founder-featured {
+        transform: none;
+    }
+
+        .about-founder-featured:hover {
+            transform: translateY(-10px);
+        }
+
+    .production-introduction-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .production-act-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .production-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .production-gallery-wide {
+        grid-column: auto;
+    }
+
+    .echo-team-grid {
+        grid-template-columns: 1fr;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .echo-team-card-featured {
+        transform: none;
+    }
+
+        .echo-team-card-featured:hover {
+            transform: translateY(-10px);
+        }
+
+    .echo-nav-links {
+        margin-bottom: 1rem;
+    }
+
+    .echo-navbar-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .echo-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .echo-production-card {
+        grid-template-columns: 1fr;
+    }
+
+    .echo-production-image-wrapper {
+        min-height: 380px;
+    }
+
+    .echo-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .echo-hero {
+        padding-top: 125px;
+    }
+
+    .echo-scroll-top {
+        right: 1rem;
+        bottom: 1rem;
+        width: 46px;
+        height: 46px;
+    }
+
+    .privacy-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .privacy-content-section {
+        padding: 75px 0;
+    }
+
+    .privacy-navigation {
+        padding: 1.4rem;
+    }
+
+    .privacy-section {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .announcements-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .announcements-hero-actions,
+    .announcements-empty-actions {
+        flex-direction: column;
+    }
+
+    .announcements-introduction-section,
+    .announcement-categories-section,
+    .latest-announcements-section,
+    .announcement-guidance-section,
+    .announcement-updates-section {
+        padding: 75px 0;
+    }
+
+    .announcement-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .announcements-empty-state,
+    .announcement-guidance-panel {
+        padding: 1.7rem;
+    }
+
+    .contact-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .contact-hero-actions {
+        flex-direction: column;
+    }
+
+    .contact-introduction-section,
+    .contact-options-section,
+    .contact-enquiry-types-section,
+    .contact-form-section,
+    .contact-safety-section {
+        padding: 75px 0;
+    }
+
+    .contact-options-grid,
+    .contact-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-group-full,
+    .contact-consent {
+        grid-column: auto;
+    }
+
+    .contact-enquiry-panel,
+    .contact-form-card,
+    .contact-safety-panel {
+        padding: 1.7rem;
+    }
+
+    .productions-page-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .productions-page-hero-actions,
+    .current-production-actions {
+        flex-direction: column;
+    }
+
+    .productions-purpose-section,
+    .current-production-section,
+    .future-productions-section,
+    .production-principles-section,
+    .productions-cta-section {
+        padding: 75px 0;
+    }
+
+    .current-production-image-wrapper {
+        min-height: 390px;
+    }
+
+    .future-production-card,
+    .future-production-content {
+        min-height: 570px;
+    }
+
+    .future-production-overlay {
+        background: linear-gradient( 180deg, rgba(5, 5, 5, 0.16), rgba(5, 5, 5, 0.96) 67% );
+    }
+
+    .future-production-content {
+        padding: 2rem;
+    }
+
+    .production-principles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .support-hero-actions {
+        flex-direction: column;
+    }
+
+    .support-introduction-section,
+    .support-options-section,
+    .support-production-section,
+    .support-accountability-section,
+    .support-details-section,
+    .support-enquiry-section {
+        padding: 75px 0;
+    }
+
+    .support-options-grid,
+    .support-accountability-grid,
+    .support-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-form-group-full,
+    .support-consent {
+        grid-column: auto;
+    }
+
+    .support-production-panel,
+    .support-details-panel,
+    .support-form-card {
+        padding: 1.7rem;
+    }
+
+    .auditions-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .auditions-hero-actions {
+        flex-direction: column;
+    }
+
+    .auditions-clarity-section,
+    .audition-categories-section,
+    .audition-process-section,
+    .audition-preparation-section,
+    .audition-form-section {
+        padding: 75px 0;
+    }
+
+    .auditions-clarity-grid,
+    .audition-category-grid,
+    .audition-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audition-form-group-full,
+    .audition-consent {
+        grid-column: auto;
+    }
+
+    .auditions-clarity-card,
+    .audition-preparation-panel,
+    .audition-form-card {
+        padding: 1.7rem;
+    }
+
+    .audition-process-step {
+        grid-template-columns: 48px 1fr;
+    }
+
+    .join-page-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .join-page-hero-actions {
+        flex-direction: column;
+    }
+
+    .join-page-introduction,
+    .join-expectations-section,
+    .join-opportunities-section,
+    .join-form-section {
+        padding: 75px 0;
+    }
+
+    .join-expectations-grid,
+    .join-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .join-form-group-full,
+    .join-consent {
+        grid-column: auto;
+    }
+
+    .join-opportunities-panel,
+    .join-form-card {
+        padding: 1.7rem;
+    }
+
+    .departments-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .departments-hero-actions {
+        flex-direction: column;
+    }
+
+    .departments-introduction,
+    .departments-list-section,
+    .departments-collaboration-section,
+    .departments-join-section {
+        padding: 75px 0;
+    }
+
+    .department-card {
+        padding: 1.7rem;
+    }
+
+    .department-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .about-hero {
+        min-height: 100vh;
+        padding-top: 130px;
+    }
+
+    .about-hero-actions,
+    .about-future-actions {
+        flex-direction: column;
+    }
+
+    .about-meaning-section,
+    .about-mission-vision-section,
+    .about-foundation-section,
+    .about-values-section,
+    .about-founders-section,
+    .about-future-section {
+        padding: 75px 0;
+    }
+
+    .about-meaning-card {
+        grid-template-columns: 1fr;
+    }
+
+    .about-meaning-letter {
+        font-size: 4rem;
+    }
+
+    .about-scripture-grid,
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-founder-card {
+        min-height: 500px;
+    }
+
+    .production-collage-section {
+        padding: 20px 0 75px;
+    }
+
+    .production-collage-card,
+    .production-collage-content {
+        min-height: 520px;
+    }
+
+    .production-collage-overlay {
+        background: linear-gradient( 180deg, rgba(5, 5, 5, 0.18), rgba(5, 5, 5, 0.96) 70% );
+    }
+
+    .production-collage-content {
+        justify-content: flex-end;
+        padding: 2rem;
+    }
+
+    .echo-hero-actions {
+        flex-direction: column;
+    }
+
+    .echo-team-section,
+    .echo-journey-section {
+        padding: 75px 0;
+    }
+
+    .echo-team-image-wrapper {
+        height: 360px;
+    }
+
+    .echo-timeline::before {
+        left: 7px;
+    }
+
+    .echo-timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding-left: 2rem;
+    }
+
+        .echo-timeline-item::before {
+            left: 0;
+            top: 8px;
+        }
+
+    .echo-timeline-year {
+        text-align: left;
+    }
+
+    .echo-timeline-content {
+        padding: 1.4rem;
+    }
+
+    .echo-join-actions {
+        flex-direction: column;
+    }
+
+    .echo-btn {
+        width: 100%;
+    }
+
+    .echo-hero-statements {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+        .echo-hero-statements span::after {
+            display: none;
+        }
+
+    .echo-introduction,
+    .echo-production-preview,
+    .echo-join-section {
+        padding: 75px 0;
+    }
+
+    .echo-footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .echo-footer-bottom {
+        flex-direction: column;
+    }
+}

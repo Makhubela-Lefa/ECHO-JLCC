@@ -1,0 +1,277 @@
+﻿/* Departments page */
+
+.departments-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 88vh;
+    padding: 150px 0 100px;
+    overflow: hidden;
+    background: radial-gradient( circle at 50% 35%, rgba(202, 164, 81, 0.16), transparent 38% ), linear-gradient( 180deg, #151515, var(--echo-black) );
+}
+
+    .departments-hero::before {
+        content: "SERVE";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: rgba(255, 255, 255, 0.018);
+        font-size: clamp(8rem, 25vw, 25rem);
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+.departments-hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.departments-hero-content {
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.departments-hero h1 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+    .departments-hero h1 span {
+        display: block;
+        color: var(--echo-gold);
+    }
+
+.departments-hero-content > p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #b6b6b6;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.departments-hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.4rem;
+}
+
+.departments-hero-glow {
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    background: rgba(202, 164, 81, 0.09);
+    filter: blur(110px);
+}
+
+.departments-hero-glow-left {
+    left: -170px;
+    top: 18%;
+}
+
+.departments-hero-glow-right {
+    right: -170px;
+    bottom: 8%;
+}
+
+/* Department introduction */
+
+.departments-introduction,
+.departments-list-section,
+.departments-collaboration-section,
+.departments-join-section {
+    padding: 110px 0;
+}
+
+.departments-introduction-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: start;
+}
+
+    .departments-introduction-grid h2,
+    .departments-collaboration-panel h2 {
+        margin-bottom: 1.3rem;
+        font-size: clamp(2.4rem, 5vw, 4.8rem);
+        font-weight: 750;
+        line-height: 1.04;
+        letter-spacing: -0.045em;
+    }
+
+        .departments-introduction-grid h2 span,
+        .departments-collaboration-panel h2 span {
+            color: var(--echo-gold);
+        }
+
+    .departments-introduction-grid p {
+        color: #aaaaaa;
+        font-size: 1.04rem;
+    }
+
+/* Department cards */
+
+.departments-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.department-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 610px;
+    padding: clamp(2rem, 4vw, 3rem);
+    overflow: hidden;
+    border: 1px solid var(--echo-border);
+    border-radius: var(--echo-radius-large);
+    background: linear-gradient( 145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.014) );
+    box-shadow: var(--echo-shadow);
+    transition: transform var(--echo-transition), border-color var(--echo-transition), background var(--echo-transition);
+}
+
+    .department-card::before {
+        content: "";
+        position: absolute;
+        right: -80px;
+        top: -80px;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        background: rgba(202, 164, 81, 0.09);
+        filter: blur(45px);
+    }
+
+    .department-card:hover {
+        transform: translateY(-9px);
+        border-color: rgba(202, 164, 81, 0.62);
+        background: linear-gradient( 145deg, rgba(202, 164, 81, 0.08), rgba(255, 255, 255, 0.018) );
+    }
+
+.department-card-top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.department-number {
+    color: var(--echo-gold);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.department-category {
+    padding: 0.45rem 0.75rem;
+    border: 1px solid rgba(202, 164, 81, 0.25);
+    border-radius: 999px;
+    color: var(--echo-gold-light);
+    background: rgba(202, 164, 81, 0.055);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.department-card h3 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem;
+    font-size: clamp(1.55rem, 3vw, 2.1rem);
+    line-height: 1.15;
+}
+
+.department-purpose {
+    position: relative;
+    z-index: 2;
+    min-height: 115px;
+    color: #adadad;
+}
+
+.department-responsibilities {
+    position: relative;
+    z-index: 2;
+    margin: 1.3rem 0;
+    padding: 1.4rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+    .department-responsibilities h4 {
+        margin-bottom: 1rem;
+        color: var(--echo-gold-light);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    .department-responsibilities ul {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: #b5b5b5;
+    }
+
+    .department-responsibilities li {
+        margin-bottom: 0.45rem;
+    }
+
+.department-suited {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1.8rem;
+    color: #888888;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.department-link {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    color: var(--echo-gold-light);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color var(--echo-transition), transform var(--echo-transition);
+}
+
+    .department-link:hover {
+        color: var(--echo-white);
+        transform: translateX(7px);
+    }
+
+/* Collaboration */
+
+.departments-collaboration-panel {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: clamp(3rem, 8vw, 6rem);
+    text-align: center;
+    border: 1px solid var(--echo-border);
+    border-radius: var(--echo-radius-large);
+    background: radial-gradient( circle at top, rgba(202, 164, 81, 0.16), rgba(255, 255, 255, 0.024) 52% );
+    box-shadow: var(--echo-shadow);
+}
+
+    .departments-collaboration-panel p {
+        max-width: 800px;
+        margin: 0 auto 1.2rem;
+        color: #aaaaaa;
+    }
