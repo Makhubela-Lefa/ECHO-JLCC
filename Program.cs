@@ -28,14 +28,15 @@ else
     app.UseHsts();
 }
 
-app.UseStatusCodePagesWithReExecute(
-    "/Home/PageNotFound",
-    "?statusCode={0}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseStatusCodePagesWithReExecute(
+    "/Home/PageNotFound",
+    "?statusCode={0}");
 
 app.UseAuthorization();
 
